@@ -1,4 +1,4 @@
-A [Giter8][g8] template for Lagom persistence with Couchbase
+A [Giter8][g8] template for Lagom using Cinnamon Metrics
 
 Template license
 ----------------
@@ -20,7 +20,7 @@ The template also contains properties file to ship metrics into 3rd party storag
 - Execute the following commands in the terminal
 
     ```
-     sbt new knoldus/lagomcinnamon.g8
+     sbt new piyushknoldus/lagomcinnamon.g8
      
      sbt clean compile
          
