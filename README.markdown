@@ -23,10 +23,10 @@ Open a console and run the following command to apply this template:
 sbt new piyushknoldus/lagomcinnamon.g8
 This template will prompt for the following parameters. Press Enter if the default values suit you:
 
-name [lagomwithcinnamon]: 
+name [lagomwithcinnamonaccelerator]: 
 github_id [piyushknoldus]: 
-developer_url [https://github.com/piyushknoldus]: 
-project_url [https://github.com/piyushknoldus/lagomwithcinnamon]:
+developer_url [https://github.com/knoldus]: 
+project_url [https://github.com/knoldus/lagomwithcinnamon]:
 
 
 ## Lagom Metrics Creation and Analysis using Cinnamon
@@ -39,7 +39,7 @@ The template also contains properties file to ship metrics into 3rd party storag
 - Execute the following commands in the terminal
 
     ```
-     sbt new piyushknoldus/lagomcinnamon.g8
+     sbt new knoldus/lagomwithcinnamonaccelerator.g8
      
      sbt clean compile
          
