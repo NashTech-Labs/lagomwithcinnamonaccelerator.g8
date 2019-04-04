@@ -24,8 +24,11 @@ sbt new piyushknoldus/lagomcinnamon.g8
 This template will prompt for the following parameters. Press Enter if the default values suit you:
 
 name [lagomwithcinnamonaccelerator]: 
+
 github_id [piyushknoldus]: 
+
 developer_url [https://github.com/knoldus]: 
+
 project_url [https://github.com/knoldus/lagomwithcinnamon]:
 
 
@@ -79,7 +82,10 @@ To start your application forked you can run the underlying Play server in the t
 
 The output should look something like this: 
 
+
+    ```
  [info] Running (fork) play.core.server.ProdServerStart 
+ 
  [info] [INFO] [03/31/2019 01:16:45.615] [Cinnamon] Agent version 2.10.17
  [info] [INFO] [03/31/2019 01:16:45.617] [Cinnamon] Cinnamon Agent arguments: loglevel=INFO
  [info] [INFO] [03/31/2019 01:16:45.987] [Cinnamon] Agent found Play version: 2.6.21
@@ -87,21 +93,15 @@ The output should look something like this:
  [info] [INFO] [03/31/2019 01:16:46.010] [Cinnamon] Agent found Scala Futures version: 2.11.12
  [info] [INFO] [03/31/2019 01:16:47.268] [Cinnamon] Agent found Akka version: 2.5.20
  [info] [INFO] [03/31/2019 01:16:47.319] [Cinnamon] Agent found Akka Streams version: 2.5.20
- [info] 2019-03-30T19:46:47.570Z [warn] application [] - application.conf @ jar:file:/tmp/sbt_bb2ecf07/job-1/target/2522bb2c/hello-lagom-impl_2.11-1.0-SNAPSHOT.jar!/application.conf: 3: play.crypto.secret is deprecated, use play.http.secret.key instead
- [info] 2019-03-30T19:46:48.887Z [info] akka.event.slf4j.Slf4jLogger [] - Slf4jLogger started
- [info] 2019-03-30T19:46:48.931Z [info] akka.remote.Remoting [sourceThread=main, akkaSource=akka.remote.Remoting, sourceActorSystem=application, akkaTimestamp=19:46:48.929UTC] - Starting remoting
- [info] 2019-03-30T19:46:49.177Z [info] akka.remote.Remoting [sourceThread=main, akkaSource=akka.remote.Remoting, sourceActorSystem=application, akkaTimestamp=19:46:49.175UTC] - Remoting started; listening on addresses :[akka.tcp://application@127.0.1.1:2552]
- [info] 2019-03-30T19:46:49.179Z [info] akka.remote.Remoting [sourceThread=main, akkaTimestamp=19:46:49.178UTC, akkaSource=akka.remote.Remoting, sourceActorSystem=application] - Remoting now listens on addresses: [akka.tcp://application@127.0.1.1:2552]
- [info] 2019-03-30T19:46:49.213Z [info] akka.cluster.Cluster(akka://application) [sourceThread=main, akkaTimestamp=19:46:49.213UTC, akkaSource=akka.cluster.Cluster(akka://application), sourceActorSystem=application] - Cluster Node [akka.tcp://application@127.0.1.1:2552] - Starting up, Akka version [2.5.20] ...
- [info] 2019-03-30T19:46:49.294Z [info] akka.cluster.Cluster(akka://application) [sourceThread=main, akkaTimestamp=19:46:49.293UTC, akkaSource=akka.cluster.Cluster(akka://application), sourceActorSystem=application] - Cluster Node [akka.tcp://application@127.0.1.1:2552] - Registered cluster JMX MBean [akka:type=Cluster]
- [info] 2019-03-30T19:46:49.294Z [info] akka.cluster.Cluster(akka://application) [sourceThread=main, akkaTimestamp=19:46:49.293UTC, akkaSource=akka.cluster.Cluster(akka://application), sourceActorSystem=application] - Cluster Node [akka.tcp://application@127.0.1.1:2552] - Started up successfully
- [info] 2019-03-30T19:46:49.359Z [info] akka.cluster.Cluster(akka://application) [sourceThread=application-akka.actor.default-dispatcher-6, akkaSource=akka.cluster.Cluster(akka://application), sourceActorSystem=application, akkaTimestamp=19:46:49.359UTC] - Cluster Node [akka.tcp://application@127.0.1.1:2552] - No seed-nodes configured, manual cluster join required, see https://doc.akka.io/docs/akka/current/cluster-usage.html#joining-to-seed-nodes
+ 
  [info] 2019-03-30T19:46:49.590Z [info] cinnamon.chmetrics.CodaHaleBackend [sourceThread=main, akkaTimestamp=19:46:49.590UTC, akkaSource=CodaHaleBackend, sourceActorSystem=application] - Reporter com.lightbend.cinnamon.chmetrics.reporter.provided.ConsoleReporter started.
  [info] 2019-03-30T19:46:50.039Z [info] play.api.Play [] - Application started (Prod)
  [info] [INFO] [03/31/2019 01:16:50.063] [Cinnamon] Agent found Akka HTTP version: 10.0.15
  [info] 2019-03-30T19:46:51.158Z [info] play.core.server.AkkaHttpServer [] - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
  [info] 3/31/19 1:16:54 AM =============================================================
+ 
  [info] -- Gauges ----------------------------------------------------------------------
+ 
  [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.active-threads
  [info]              value = 0
  [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.parallelism
@@ -130,12 +130,16 @@ The output should look something like this:
  [info]              value = 0
  [info] metrics.cinnamon.play.2_6_21.agent.2_10_17.scala.2_11_12.akka.2_5_20.versions
  [info]              value = 1
+ 
  [info] -- Counters --------------------------------------------------------------------
+ 
  [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonManager.running-actors
  [info]              count = 1
  [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonProxy.running-actors
  [info]              count = 1
+ 
  [info] -- Histograms ------------------------------------------------------------------
+ 
  [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonManager.mailbox-size
  [info]              count = 0
  [info]                min = 0
@@ -269,66 +273,9 @@ The output should look something like this:
  [info]               99% <= 1459842.00
  [info]             99.9% <= 1459842.00
  [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonProxy.remote-deserialization-time
- [info]              count = 0
- [info]                min = 0
- [info]                max = 0
- [info]               mean = 0.00
- [info]             stddev = 0.00
- [info]             median = 0.00
- [info]               75% <= 0.00
- [info]               95% <= 0.00
- [info]               98% <= 0.00
- [info]               99% <= 0.00
- [info]             99.9% <= 0.00
- [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonProxy.remote-received-message-size
- [info]              count = 0
- [info]                min = 0
- [info]                max = 0
- [info]               mean = 0.00
- [info]             stddev = 0.00
- [info]             median = 0.00
- [info]               75% <= 0.00
- [info]               95% <= 0.00
- [info]               98% <= 0.00
- [info]               99% <= 0.00
- [info]             99.9% <= 0.00
- [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonProxy.remote-sent-message-size
- [info]              count = 0
- [info]                min = 0
- [info]                max = 0
- [info]               mean = 0.00
- [info]             stddev = 0.00
- [info]             median = 0.00
- [info]               75% <= 0.00
- [info]               95% <= 0.00
- [info]               98% <= 0.00
- [info]               99% <= 0.00
- [info]             99.9% <= 0.00
- [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonProxy.remote-serialization-time
- [info]              count = 0
- [info]                min = 0
- [info]                max = 0
- [info]               mean = 0.00
- [info]             stddev = 0.00
- [info]             median = 0.00
- [info]               75% <= 0.00
- [info]               95% <= 0.00
- [info]               98% <= 0.00
- [info]               99% <= 0.00
- [info]             99.9% <= 0.00
- [info] metrics.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonProxy.stash-size
- [info]              count = 0
- [info]                min = 0
- [info]                max = 0
- [info]               mean = 0.00
- [info]             stddev = 0.00
- [info]             median = 0.00
- [info]               75% <= 0.00
- [info]               95% <= 0.00
- [info]               98% <= 0.00
- [info]               99% <= 0.00
- [info]             99.9% <= 0.00
+ 
  [info] -- Meters ----------------------------------------------------------------------
+ 
  [info] events.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonManager.actor-failure
  [info]              count = 0
  [info]          mean rate = 0.00 events/second
@@ -344,6 +291,8 @@ The output should look something like this:
  [info] events.akka.systems.application.dispatchers.akka_actor_default-dispatcher.actors.akka_cluster_singleton_ClusterSingletonManager.log-error
  [info]              count = 0
 
-#####Note: Lagom has a special development mode for rapid development, and does not fork the JVM when using the runAll or run commands in sbt. A forked JVM is necessary to gain metrics for actors and HTTP calls, since those are provided by the Cinnamon Java Agent. Hence you need to deploy it either on DCOS or some other tool to visualize the metrics or run the above used test example.
+
+    ```
+##### Note: Lagom has a special development mode for rapid development, and does not fork the JVM when using the runAll or run commands in sbt. A forked JVM is necessary to gain metrics for actors and HTTP calls, since those are provided by the Cinnamon Java Agent. Hence you need to deploy it either on DCOS or some other tool to visualize the metrics or run the above used test example.
 
 # LagomScalaDemo
