@@ -10,6 +10,25 @@ This template is distributed without any warranty. See <http://creativecommons.o
 
 [g8]: http://www.foundweekends.org/giter8/
 
+You can use Giter8 to create your own project from the quickstart. Alternatively, you can download a packaged version of this project from - https://github.com/piyushknoldus/LagomCinnamonDemo/archive/master.zip
+
+or clone the project directly from github - https://github.com/piyushknoldus/LagomCinnamonDemo
+
+Prerequisites:
+
+JDK 8
+sbt 0.13.13 or higher
+Open a console and run the following command to apply this template:
+
+sbt new piyushknoldus/lagomcinnamon.g8
+This template will prompt for the following parameters. Press Enter if the default values suit you:
+
+name [lagomwithcinnamon]: 
+github_id [piyushknoldus]: 
+developer_url [https://github.com/piyushknoldus]: 
+project_url [https://github.com/piyushknoldus/lagomwithcinnamon]:
+
+
 ## Lagom Metrics Creation and Analysis using Cinnamon
 Template uses Cinnamon Plugin to generate mertics for Lagom Application.
 
